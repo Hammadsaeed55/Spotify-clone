@@ -1,0 +1,36 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}/* Hide scrollbar for Firefox */
+html {
+    scrollbar-width: none;
+  }
+  
+  /* Hide scrollbar for Webkit/Blink based browsers */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333; /* Change this to your desired background color */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666; /* Change this to your desired scrollbar color */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Change this to your desired scrollbar color on hover */
+  }

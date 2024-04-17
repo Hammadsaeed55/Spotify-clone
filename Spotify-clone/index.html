@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="https://kit.fontawesome.com/fb39706c88.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo  m-1">
+                    <img width="140" src="logo.svg" alt="">
+                    <img src="close.svg" class="invert close" alt="">
+                </div>
+                
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-black bg-grey rounded p-1 m-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                       
+                    </ul>
+                </div>
+
+                <!-- <div class="footer">
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a></div>
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div style="display: inline-block;"><a
+                            href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div> -->
+            </div>
+
+        </div>
+        <div class="right  bg-grey rounded ">
+            <div class="header">
+                <div class="nav">
+                   
+                        <img style="width: 25px; height: 25px;" class="invert hamburger" src="hamburger.svg" alt="">
+        
+                    <img src="https://cdn.hugeicons.com/icons/arrow-left-02-stroke-rounded.svg" alt="arrow-left-02"
+                        width="24" height="24" class="invert" />
+                    <img src="https://cdn.hugeicons.com/icons/arrow-right-02-stroke-rounded.svg" alt="arrow-right-02"
+                        width="24" height="24" class="invert" />
+                </div>
+                
+
+                <div class="buttons">
+                    <!-- <div class="mode">
+                        <p id="light">Light</p>
+                        <input type="checkbox" id="toggle" class="toggle-button"><label for="toggle"></label><style>.toggle-button{display:none}.toggle-button+label{display:inline-block;width:40px;height:20px;background-color:#ccc;border-radius:20px;position:relative;cursor:pointer}.toggle-button+label:before{content:'';position:absolute;width:16px;height:16px;border-radius:50%;background-color:#fff;top:2px;left:2px;transition:all 0.3s}.toggle-button:checked+label{background-color:#606062}.toggle-button:checked+label:before{transform:translateX(20px)}</style>
+                    </div> -->
+                   <div>
+                    <button id="signup" class="btn">Sign up</button>
+                    <button id="login" class="btn">Log in</button>
+                   </div>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify PlayLists</h1>
+                <div class="cardContainer">
+                    <!-- cards1 -->
+                    <div data-folder="animal" class="card">
+                       <div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                       </div>
+                        <h2>ANIMAL</h2>
+                        <p class="artist" >Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                    </div>
+                    <!-- cards -->
+
+                    <!-- cards2 -->
+                    <div data-folder="moosewala" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4PULA4EFzYTrxYvOVlwpiQ/en-GB" alt="">
+                        <h2>Moosetops</h2>
+                        <p class="artist" >Sidhu Moose Wala</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards3 -->
+                     <div data-folder="kumarsanu" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="	https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2Mu7fn-default.jpg" alt="">
+                        <h2>Kumar Sanu</h2>
+                        <p class="artist" >Kumar Sanu Hits</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards4 -->
+                     <div data-folder="diljeetdosanjh" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67706f000000027954230cfbffff483cc4380f" alt="">
+                        <h2>Diljit Dosanjh</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards5 -->
+                     <div data-folder="arijitsingh" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="">
+                        <h2>Arijit singh</h2>
+                        <p class="artist" >Arijit singh Hits</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards6 -->
+                     <div data-folder="Slowed" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e0302ea85817930e9b9611a3" alt="">
+                        <h2>Slowed Song</h2>
+                        <p class="artist" >2022-Slowed Remix</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards7 -->
+                     <div data-folder="junaidjamshed" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="	https://i.scdn.co/image/ab67616d00001e02c1525764ac98c4ac584da35b" alt="">
+                        <h2>Junaid Jamshed</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards8 -->
+                     <div data-folder="atifaslam" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1n6IJz-default.jpg" alt="">
+                        <h2>Atif Aslam</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards9 -->
+                     <div data-folder="rahatfatehalikhan" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67616d00001e0261e0b61e11706b9acff50231" alt="">
+                        <h2>Rahat fateh Ali Khan</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards10 -->
+                     <div data-folder="nfak" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67616d00001e0249fef5988173f563b9edaea6" alt="">
+                        <h2>NFAK</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards11 -->
+                     <div data-folder="uditnarayad" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO491yeR-default.jpg" alt="">
+                        <h2>Udit Narayad</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+
+                     <!-- cards12 -->
+                     <div data-folder="arrehman" class="card">
+
+                        <div class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                                <path fill="" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab6761610000517447409ef8b2896dd3be24507d" alt="">
+                        <h2>mohammad samie</h2>
+                        <p class="artist" >Artist</p>
+                    </div>
+                    <!-- cards -->
+                    
+
+
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+                        <div class="songinfo">
+                              
+                        </div>
+                        <div class="songbuttons">
+                            <img id="previous" src="prevsong.svg" alt="">
+                            <img id="play" src="playsong.svg" alt="">
+                            <img id="next" src="nextsong.svg" alt="">
+                        </div>
+                        <div class="songtime">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
